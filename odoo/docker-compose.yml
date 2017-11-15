@@ -9,7 +9,7 @@ services:
     volumes:
       - odoo-web-data:/var/lib/odoo
       - ./addons:/mnt/extra-addons
-      # - ./config:/etc/odoo
+      - ./config:/etc/odoo
   db:
     image: postgres:9.4
     environment:
